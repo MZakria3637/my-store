@@ -1,0 +1,13 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+h1{
+    color: white;
+}
+.contain {
+    background-color: white;
+    width: 160px;
+    float: inline-end;
+    color: blue;
+}
