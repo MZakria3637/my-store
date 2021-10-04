@@ -1,1 +1,17 @@
-<p>product-details works!</p>
+<!-- <div *ngFor="let product of products">
+    <h3>
+        <a [title]="product.name+' details'" [routerLink="['/product,product.id']">
+            {{product.name}}
+        </a>
+    </h3>
+</div> -->
+<div class="m-5">
+    <h2 class="text-secondary">Product Details</h2>
+
+    <div *ngIf="product" class="m-4">
+        <h3>{{ product.name }}</h3>
+        <h4>{{ product.price | currency }}</h4>
+        <p>{{ product.description }}</p>
+        <button (click)="addToCart(product)" class="btn btn-primary">Buy</button>
+    </div>
+</div>
